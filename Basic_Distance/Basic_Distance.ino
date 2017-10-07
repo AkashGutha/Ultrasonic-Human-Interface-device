@@ -1,5 +1,5 @@
 // custom defines for trigger pin and other pins
-#define TRIGGER_PIN 12
+#define TRIGGER_PIN 11
 #define ECHO_INPUT_PIN 10
 #define SPEED_OF_SOUND_MTRS_BY_SEONDS 340
 
@@ -32,4 +32,6 @@ void loop(){
   distance = (time * SPEED_OF_SOUND_MTRS_BY_SEONDS)/ (1000000);
 
   Serial.println("Distance from the obstacle is : " + distance + " meters");
+
+  delay(1000);
 }
