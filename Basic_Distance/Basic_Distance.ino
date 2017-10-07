@@ -8,7 +8,7 @@ unsigned long time = 0;
 unsigned long distance = 0;
 
 // this is used to setup your hardware and inittilaze varibales
-void setup(){
+void setup() {
   pinMode(TRIGGER_PIN, OUTPUT);
   pinMode(ECHO_INPUT_PIN, INPUT);
 
@@ -16,7 +16,7 @@ void setup(){
 }
 
 // this function will run again and again for the rest of the application lifetime
-void loop(){
+void loop() {
 
   digitalWrite(TRIGGER_PIN, LOW);
   delayMicroseconds(2);
